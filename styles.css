@@ -55,8 +55,9 @@ a {
   transition: all 0.2s ease;
 }
 
-.topnav a:hover {
-  background: rgba(255, 255, 255, 0.12);
+.topnav a:hover,
+.topnav a.active {
+  background: rgba(255, 255, 255, 0.16);
   transform: translateY(-1px);
 }
 
@@ -132,7 +133,8 @@ p {
   color: #33506d;
 }
 
-.hero-actions {
+.hero-actions,
+.page-actions {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
@@ -224,8 +226,83 @@ p {
   color: #4b6b86;
 }
 
+.form-page {
+  display: grid;
+  gap: 16px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+label {
+  display: grid;
+  gap: 8px;
+  font-weight: 700;
+  color: #17324f;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d6e2f0;
+  border-radius: 14px;
+  background: #fff;
+  color: #102033;
+  outline: none;
+  font: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.16);
+}
+
+textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.checks {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid #dbe6f3;
+  background: linear-gradient(180deg, #fbfdff, #f5f9fe);
+  border-radius: 18px;
+}
+
+.checks.cols2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.checks label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-weight: 600;
+  color: #1f3b57;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #edf2f7;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+}
+
+.checks input {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  accent-color: #1d4ed8;
+}
+
 @media (max-width: 900px) {
-  .nav-grid {
+  .nav-grid,
+  .form-grid,
+  .checks.cols2 {
     grid-template-columns: 1fr;
   }
 
@@ -235,5 +312,31 @@ p {
 
   .wrap {
     padding: 18px;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .topbar,
+  .hero-actions,
+  .page-actions {
+    display: none !important;
+  }
+
+  .card,
+  .hero {
+    box-shadow: none;
+    border: none;
+    background: #fff;
+    padding: 0;
+  }
+
+  .wrap {
+    max-width: none;
+    padding: 0;
   }
 }
