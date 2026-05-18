@@ -1,55 +1,46 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wer bin ich | Taxi Service Kamernstedt</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Skills</title>
+<link rel="stylesheet" href="styles.css" />
+<script defer src="app.js"></script>
 </head>
 <body>
-    <header class="site-header">
-<nav class="navbar">
-    <a class="logo" href="index.html">🚖 Kamernstedt</a>
-    <ul class="nav-links">
-        <li><a href="index.html" class="home-btn">🏠 Startseite</a></li>
-        <li><a href="wer-bin-ich.html">Wer bin ich</a></li>
-        <li><a href="erfahrungen.html">Erfahrungen</a></li>
-        <li><a href="ziele.html">Ziele</a></li>
-        <li><a href="konzept.html">Konzept</a></li>
-        <li><a href="leistungen.html">Leistungen</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="abschluss.html">Abschluss</a></li>
-    </ul>
-</nav>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="section page-section">
-            <div class="container">
-                <p class="section-kicker">Wer bin ich</p>
-                <div class="two-column">
-                    <div class="content-box">
-                        <h3>IC – In Character</h3>
-                        <p>IC spiele ich <strong>Luca Schulz 25 Jahre alt (15.12.2000)</strong>.</p>
-                         <p>Außerdem Arbeite ich aktuell <strong>beim KRD</strong>.</p>
-                    </div>
-                    <div class="content-box">
-                        <h3>OOC – Out of Character</h3>
-                        <p>OOC bin ich ein <strong>ruhiger, ehrgeiziger und abenteuerlustiger Spieler</strong>, der gerne Verantwortung übernimmt und Systeme aufbaut.</p>
-                    </div>
-                </div>
-                <a href="erfahrungen.html" class="cta-button next-page">Weiter →</a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container footer-inner">
-            <p>© 2026 Taxi Service Kamernstedt</p>
-            <p><a href="index.html">← Zurück zur Startseite</a></p>
-        </div>
-    </footer>
+<header class="topbar">
+  <div class="brand">EinsatzDoku</div>
+  <nav>
+    <a href="index.html">Start</a>
+    <a href="patienten.html">Patient</a>
+    <a href="einsatz.html">Einsatz</a>
+    <a href="medizin.html">Medizin</a>
+    <a href="tätigkeiten.html">Tätigkeiten</a>
+    <a href="skills.html">Skills</a>
+    <a href="bericht.html">Bericht</a>
+  </nav>
+</header>
+<main class="wrap">
+  <section class="card">
+    <h1>Maßnahmen / Skills</h1>
+    <form id="form-skills">
+      <div class="checks cols2">
+        <label><input type="checkbox" name="ekg6"> Anlegen 6-Kanal-EKG</label>
+        <label><input type="checkbox" name="ekg12"> Anlegen 12-Kanal-EKG</label>
+        <label><input type="checkbox" name="ekgwertung"> Auswertung EKG unter Anleitung</label>
+        <label><input type="checkbox" name="bd"> Blutdruck messen</label>
+        <label><input type="checkbox" name="puls"> Puls messen</label>
+        <label><input type="checkbox" name="bz"> Blutzucker messen</label>
+        <label><input type="checkbox" name="ukk"> Anmeldung im UKK via Tablet unter Anleitung</label>
+        <label><input type="checkbox" name="uebergabe"> Übergabe an ärztliches Personal im UKK unter Anleitung</label>
+      </div>
+      <label>Maßnahmen / Hinweise<textarea name="massnahmen"></textarea></label>
+      <div class="actions">
+        <button type="button" class="btn" data-save="skills">Speichern</button>
+        <a class="btn secondary" href="bericht.html">Zum Bericht</a>
+      </div>
+    </form>
+  </section>
+</main>
 </body>
 </html>
