@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Einsatzart</title>
-<link rel="stylesheet" href="styles.css" />
-<script defer src="app.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Einsatzart</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header class="topbar">
-  <div class="brand">EinsatzDoku</div>
-  <nav>
-    <a href="index.html">Start</a>
-    <a href="patienten.html">Patient</a>
-    <a href="einsatz.html">Einsatz</a>
-    <a href="medizin.html">Medizin</a>
-    <a href="tätigkeiten.html">Tätigkeiten</a>
-    <a href="skills.html">Skills</a>
-    <a href="bericht.html">Bericht</a>
-  </nav>
-</header>
-<main class="wrap">
-  <section class="card">
-    <h1>Einsatzart</h1>
-    <form id="form-einsatz">
+  <header class="topbar">
+    <div class="brand">EinsatzDoku</div>
+    <nav class="topnav">
+      <a href="index.html">Start</a>
+      <a href="patienten.html">Patient</a>
+      <a class="active" href="einsatz.html">Einsatz</a>
+      <a href="medizin.html">Medizin</a>
+      <a href="taetigkeiten.html">Tätigkeiten</a>
+      <a href="skills.html">Skills</a>
+      <a href="bericht.html">Bericht</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="card form-page">
+      <div class="section-head">
+        <h1>Einsatzart</h1>
+        <p>Art des Einsatzes und erste Einschätzung.</p>
+      </div>
+
       <div class="checks">
-        <label><input type="checkbox" name="prim_notarzt"> Primäreinsatz mit Notarzt</label>
-        <label><input type="checkbox" name="prim_ohne"> Primäreinsatz ohne Notarzt</label>
-        <label><input type="checkbox" name="krankentransport"> Krankentransport</label>
+        <label><input type="checkbox" /> Primäreinsatz mit Notarzt</label>
+        <label><input type="checkbox" /> Primäreinsatz ohne Notarzt</label>
+        <label><input type="checkbox" /> Krankentransport</label>
       </div>
-      <label>Was ist passiert?<textarea name="was_passiert"></textarea></label>
-      <label>Wie wurde alarmiert?<textarea name="alarmierung"></textarea></label>
-      <div class="actions">
-        <button type="button" class="btn" data-save="einsatz">Speichern</button>
-        <a class="btn secondary" href="medizin.html">Weiter</a>
+
+      <label>Was ist passiert?<textarea placeholder="Ereignis und Hintergrund"></textarea></label>
+      <label>Wie wurde alarmiert?<textarea placeholder="Alarmierung, Ort, Situation"></textarea></label>
+
+      <div class="page-actions">
+        <a class="btn ghost" href="patienten.html">Zurück</a>
+        <a class="btn" href="medizin.html">Weiter</a>
       </div>
-    </form>
-  </section>
-</main>
+    </section>
+  </main>
 </body>
 </html>
