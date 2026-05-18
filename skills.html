@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Skills</title>
-<link rel="stylesheet" href="styles.css" />
-<script defer src="app.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header class="topbar">
-  <div class="brand">EinsatzDoku</div>
-  <nav>
-    <a href="index.html">Start</a>
-    <a href="patienten.html">Patient</a>
-    <a href="einsatz.html">Einsatz</a>
-    <a href="medizin.html">Medizin</a>
-    <a href="tätigkeiten.html">Tätigkeiten</a>
-    <a href="skills.html">Skills</a>
-    <a href="bericht.html">Bericht</a>
-  </nav>
-</header>
-<main class="wrap">
-  <section class="card">
-    <h1>Maßnahmen / Skills</h1>
-    <form id="form-skills">
+  <header class="topbar">
+    <div class="brand">EinsatzDoku</div>
+    <nav class="topnav">
+      <a href="index.html">Start</a>
+      <a href="patienten.html">Patient</a>
+      <a href="einsatz.html">Einsatz</a>
+      <a href="medizin.html">Medizin</a>
+      <a href="taetigkeiten.html">Tätigkeiten</a>
+      <a class="active" href="skills.html">Skills</a>
+      <a href="bericht.html">Bericht</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="card form-page">
+      <div class="section-head">
+        <h1>Skills</h1>
+        <p>Maßnahmen und technische Fertigkeiten.</p>
+      </div>
+
       <div class="checks cols2">
-        <label><input type="checkbox" name="ekg6"> Anlegen 6-Kanal-EKG</label>
-        <label><input type="checkbox" name="ekg12"> Anlegen 12-Kanal-EKG</label>
-        <label><input type="checkbox" name="ekgwertung"> Auswertung EKG unter Anleitung</label>
-        <label><input type="checkbox" name="bd"> Blutdruck messen</label>
-        <label><input type="checkbox" name="puls"> Puls messen</label>
-        <label><input type="checkbox" name="bz"> Blutzucker messen</label>
-        <label><input type="checkbox" name="ukk"> Anmeldung im UKK via Tablet unter Anleitung</label>
-        <label><input type="checkbox" name="uebergabe"> Übergabe an ärztliches Personal im UKK unter Anleitung</label>
+        <label><input type="checkbox" /> Anlegen 6-Kanal-EKG</label>
+        <label><input type="checkbox" /> Anlegen 12-Kanal-EKG</label>
+        <label><input type="checkbox" /> Auswertung EKG unter Anleitung</label>
+        <label><input type="checkbox" /> Blutdruck messen</label>
+        <label><input type="checkbox" /> Puls messen</label>
+        <label><input type="checkbox" /> Blutzucker messen</label>
+        <label><input type="checkbox" /> Anmeldung im UKK via Tablet unter Anleitung</label>
+        <label><input type="checkbox" /> Übergabe an ärztliches Personal im UKK unter Anleitung</label>
       </div>
-      <label>Maßnahmen / Hinweise<textarea name="massnahmen"></textarea></label>
-      <div class="actions">
-        <button type="button" class="btn" data-save="skills">Speichern</button>
-        <a class="btn secondary" href="bericht.html">Zum Bericht</a>
+
+      <label>Maßnahmen / Hinweise<textarea placeholder="Weitere Skills oder Beobachtungen"></textarea></label>
+
+      <div class="page-actions">
+        <a class="btn ghost" href="taetigkeiten.html">Zurück</a>
+        <a class="btn" href="bericht.html">Weiter</a>
       </div>
-    </form>
-  </section>
-</main>
+    </section>
+  </main>
 </body>
 </html>
