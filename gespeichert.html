@@ -14,6 +14,7 @@
       <a href="index.html">Start</a>
       <a href="patientenfrage.html">Patientenfrage</a>
       <a href="bericht.html">Bericht</a>
+      <a href="xabcde.html">xABCDE</a>
       <a class="active" href="gespeichert.html">Gespeichert</a>
     </nav>
   </header>
@@ -22,18 +23,20 @@
     <section class="card form-page">
       <div class="section-head">
         <h1>Gespeicherte Einträge</h1>
-        <p>Alle Patientenfragen und Berichte gesammelt.</p>
+        <p>Alle Patientenfragen, Berichte und xABCDE-Einträge gesammelt.</p>
       </div>
 
       <div class="page-actions">
         <a class="btn" href="patientenfrage.html">Neue Patientenfrage</a>
         <a class="btn ghost" href="bericht.html">Neuer Bericht</a>
+        <a class="btn ghost" href="xabcde.html">Neues xABCDE</a>
         <button class="btn ghost" id="clearAllBtn" type="button">Alle löschen</button>
       </div>
 
       <div class="switcher">
-        <button class="tab-btn active" data-view="patient">Patientenfragen</button>
-        <button class="tab-btn" data-view="report">Berichte</button>
+        <button class="tab-btn active" data-view="patient" type="button">Patientenfragen</button>
+        <button class="tab-btn" data-view="report" type="button">Berichte</button>
+        <button class="tab-btn" data-view="xabcde" type="button">xABCDE</button>
       </div>
 
       <div id="savedList" class="saved-list"></div>
