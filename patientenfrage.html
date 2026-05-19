@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patientenfrage</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">EinsatzDoku</div>
+    <nav class="topnav">
+      <a href="index.html">Start</a>
+      <a class="active" href="patientenfrage.html">Patientenfrage</a>
+      <a href="tagesdoku.html">Tagesdoku</a>
+    </nav>
+  </header>
 
+  <main class="wrap">
+    <section class="card form-page">
+      <div class="section-head">
+        <h1>Patientenfrage</h1>
+        <p>Kurze Abfrage direkt am Patienten.</p>
+      </div>
+
+      <div class="form-grid">
+        <label>Name<input name="name" type="text" placeholder="Name" /></label>
+        <label>Alter<input name="alter" type="text" placeholder="Alter" /></label>
+        <label>Geburtsdatum<input name="geburtsdatum" type="date" /></label>
+        <label>Datum<input name="datum" type="date" /></label>
+        <label>Uhrzeit<input name="uhrzeit" type="time" /></label>
+        <label>Orientierung<input name="orientierung" type="text" placeholder="Person / Ort / Zeit / Situation" /></label>
+      </div>
+
+      <label>Was ist passiert?<textarea name="was_passiert" placeholder="Kurze Beschreibung"></textarea></label>
+
+      <div class="checks cols2">
+        <label><input type="checkbox" name="schmerzen" value="ja" /> Schmerzen</label>
+        <label><input type="checkbox" name="schwindel" value="ja" /> Schwindel</label>
+        <label><input type="checkbox" name="uebelkeit" value="ja" /> Übelkeit</label>
+        <label><input type="checkbox" name="atemnot" value="ja" /> Atemnot</label>
+      </div>
+
+      <div class="form-grid">
+        <label>Schmerzskala (0-10)<input name="schmerzskala" type="number" min="0" max="10" /></label>
+        <label>Schmerzmittel<input name="schmerzmittel" type="text" placeholder="Ja / Nein / was?" /></label>
+      </div>
+
+      <label>Wie beschreibt der Patient den Schmerz?<textarea name="schmerzbeschreibung" placeholder="z. B. stechend, drückend ..."></textarea></label>
+      <label>Krankenhaus<textarea name="krankenhaus" placeholder="Ja / Nein / bedenken?"></textarea></label>
+
+      <div class="page-actions">
+        <a class="btn ghost" href="index.html">Zur Startseite</a>
+        <a class="btn" href="tagesdoku.html">Weiter zur Tagesdoku</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
