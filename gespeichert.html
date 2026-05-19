@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gespeichert</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">EinsatzDoku</div>
+    <nav class="topnav">
+      <a href="index.html">Start</a>
+      <a href="patientenfrage.html">Patientenfrage</a>
+      <a class="active" href="gespeichert.html">Gespeichert</a>
+    </nav>
+  </header>
 
+  <main class="wrap">
+    <section class="card form-page">
+      <div class="section-head">
+        <h1>Gespeicherte Einträge</h1>
+        <p>Alle bisher gespeicherten Patientenfragen.</p>
+      </div>
+
+      <div class="page-actions">
+        <a class="btn" href="patientenfrage.html">Neuen Eintrag erfassen</a>
+        <button class="btn ghost" id="clearAllBtn" type="button">Alle löschen</button>
+      </div>
+
+      <div id="savedList" class="saved-list"></div>
+    </section>
+  </main>
+</body>
+</html>
