@@ -13,6 +13,7 @@
     <nav class="topnav">
       <a href="index.html">Start</a>
       <a href="patientenfrage.html">Patientenfrage</a>
+      <a href="bericht.html">Bericht</a>
       <a class="active" href="gespeichert.html">Gespeichert</a>
     </nav>
   </header>
@@ -21,12 +22,18 @@
     <section class="card form-page">
       <div class="section-head">
         <h1>Gespeicherte Einträge</h1>
-        <p>Alle bisher gespeicherten Patientenfragen.</p>
+        <p>Alle Patientenfragen und Berichte gesammelt.</p>
       </div>
 
       <div class="page-actions">
-        <a class="btn" href="patientenfrage.html">Neuen Eintrag erfassen</a>
+        <a class="btn" href="patientenfrage.html">Neue Patientenfrage</a>
+        <a class="btn ghost" href="bericht.html">Neuer Bericht</a>
         <button class="btn ghost" id="clearAllBtn" type="button">Alle löschen</button>
+      </div>
+
+      <div class="switcher">
+        <button class="tab-btn active" data-view="patient">Patientenfragen</button>
+        <button class="tab-btn" data-view="report">Berichte</button>
       </div>
 
       <div id="savedList" class="saved-list"></div>
